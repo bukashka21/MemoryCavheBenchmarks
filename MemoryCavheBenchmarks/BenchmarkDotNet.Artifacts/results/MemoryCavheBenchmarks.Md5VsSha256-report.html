@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MemoryCavheBenchmarks.Md5VsSha256-20230612-200946</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2604/22H2/2022Update)
+Intel Celeron CPU 1005M 1.90GHz, 1 CPU, 2 logical and 2 physical cores
+.NET SDK=5.0.301
+  [Host]     : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT SSE4.2
+  DefaultJob : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT SSE4.2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>Sha256</td><td>87.99 &mu;s</td><td>0.524 &mu;s</td><td>0.490 &mu;s</td>
+</tr><tr><td>Md5</td><td>36.45 &mu;s</td><td>0.054 &mu;s</td><td>0.051 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
